@@ -9,49 +9,6 @@
 </style>
 
 <footer class="footer-1">
-    <div class="footer-area area-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-sm-8 col-xs-12">
-                    <div class="footer-content footer-about-top">
-                        <div class="footer-head">
-                            <h4>Our Concern</h4>
-                            <div class="footer-services-link row">
-                                <div class="col-md-6">
-                                    <ul class="footer-list">
-                                        <li><a>Agriculture Goods: Potato, Green Pea, Carrot, Cauliflower, Bottle Gourd, Cabbage, Coriander Leaves, Ladies Finger, Cucumber, Bitter Gourd, Marsh Herb, and others</a></li>
-                                        <li><a>Animal Products: Horns, Hoofs, Ox testicles, Bezoar (gallstone), Bones, Intestines, Blood, and other organs</a></li>
-                                        <li><a>Seafood Items: Pomfret fish, Lobster, Crab, Seaweed, Cuchia (eel), and other delicacies </a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <ul class="footer-list">
-
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!-- end single footer -->
-                <div class="col-md-3 col-sm-3 col-xs-12 clear_mobile">
-                    <div class="footer-content footer-about-top">
-                        <div class="footer-head">
-                            <h4>Get In Touch</h4>
-                            <div class="footer-contacts">
-                                <p><i class="fa fa-map"></i><span> 6, Sujatnagar, Pallabi, <br /> Mirpur 12, Dhaka- 1216, <br /> Bangladesh.
-                                </p>
-                                <p><i class="fa fa-phone"></i><span> +88 -02-51040404</span></p>
-                                <p><i class="fa fa-mobile"></i> / <i class="fa fa-wechat"></i> / <i class="fa fa-whatsapp"></i><span> +88 01713-142422</span></p>
-                                <p><i class="fa fa-envelope"></i><span> info@tejaratbd.com</span></p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end single footer -->
-        </div>
-    </div>
     <!-- End footer area -->
     <div class="footer-area-bottom">
         <div class="container">

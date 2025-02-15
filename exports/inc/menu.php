@@ -54,8 +54,8 @@
                                     </li>
                                     <li><a href="<?= 'about.php' ?>"><i class="fa fa-share"></i>&nbsp;About Company</a>
                                     </li>
-                                    <li><a href="<?= 'profile.php' ?>"><i class="fa fa-share"></i>&nbsp;Company
-                                            Profile</a></li>
+                                    <!-- <li><a href="<?= 'profile.php' ?>"><i class="fa fa-share"></i>&nbsp;Company
+                                            Profile</a></li> -->
                                 </ul>
 
                             <li><a href="<?= 'contact.php' ?>"><i class="fa fa-mobile-phone"></i>&nbsp; Contacts</a>

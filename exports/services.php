@@ -62,18 +62,11 @@
 <div class="single-services-page page-padding">
     <div class="">
         <div class="card-group">
-            <div class="card">
-                <img class="card-img-top" src="../img/exports/cow.webp" alt="Card image cap">
-                <div class="card-body">
-                    <h5 class="card-title">Animal Products</h5>
-                    <p class="card-text">We offer a range of animal products, including horns, hoofs, Ox testicles, bezoar (gallstone), bones, intestines, blood, and other organs, sourced ethically and sustainably.</p>
-
-                </div>
-            </div>
+            
             <div class="card">
                 <img class="card-img-top" src="../img/exports/agri-veges.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Agricultural Goods</h5>
+                    <h5 class="card-title">Agricultural Products</h5>
                     <p class="card-text">Tejarat International specializes in exporting a variety of fruits—Guava, Jackfruit, Litchi, Mangoes, Pineapple—and vegetables, featuring the versatile Potato, among others, providing high-quality produce for global markets.</p>
 
                 </div>
@@ -81,7 +74,7 @@
             <div class="card">
                 <img class="card-img-top" src="../img/exports/seafood-market.jpg" alt="Card image cap">
                 <div class="card-body">
-                    <h5 class="card-title">Seafood Items</h5>
+                    <h5 class="card-title">Marine Products</h5>
                     <p class="card-text">Our seafood export range includes premium items such as pomfret fish, lobster, crab, seaweed, Cuchia (eel), and other delicacies from the ocean, ensuring a delightful culinary experience for our global clientele.</p>
 
                 </div>

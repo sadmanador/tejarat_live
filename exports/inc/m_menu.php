@@ -25,7 +25,7 @@
                                 <ul class="sub-menu">
                                     <li><a href="<?= 'message.php' ?>">Message From CEO</a></li>
                                     <li><a href="<?= 'about.php' ?>">About Company</a></li>
-                                    <li><a href="<?= 'profile.php' ?>">Company Profile</a></li>
+                                    <!-- <li><a href="<?= 'profile.php' ?>">Company Profile</a></li> -->
                                 </ul>
                             </li>
                             
