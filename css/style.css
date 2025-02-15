@@ -1,0 +1,80 @@
+.section {
+  cursor: pointer;
+  border-radius: 15px;
+  background-color: #eee;
+  padding: 12px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card-container {
+  margin-top: 100px;
+}
+
+.section-img {
+  border-radius: 15px;
+}
+
+.section-title {
+  margin: 15px 0;
+}
+
+.export-btn {
+  background-color: rgb(58, 77, 57);
+}
+.defense-btn {
+  background-color: rgb(6, 34, 65);
+}
+
+.section-btn a {
+  color: white;
+}
+
+.section-btn {
+  border: none;
+  font-size: 24px;
+  padding: 14px 24px;
+  font-weight: 600;
+  color: #eee;
+  border-radius: 15px;
+  transition: transform 0.5s;
+}
+
+.section-btn:hover {
+  opacity: 80%;
+  transform: scale(1.1);
+  color: white;
+}
+
+.section-1,
+.section-2 {
+  transition: background-color 0.7s;
+}
+
+.section-1:hover {
+  background-color: rgba(58, 77, 57, 0.4);
+}
+.section-2:hover {
+  background-color: rgba(6, 34, 65, 0.4);
+}
+
+@media (min-width: 767px) {
+  .section {
+    margin: 20px 0;
+  }
+
+  .card-container {
+    padding-top: 150px;
+    margin: 0 20px;
+    justify-items: center;
+  }
+
+  .card-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+}
+
+
+
