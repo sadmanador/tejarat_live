@@ -1,66 +1,56 @@
-<?php include_once 'inc/header.php' ?>
-<!-- header end -->
+<?php
+/**
+ * Tejarat International - Main Entry Point
+ * Industry-standard PHP application with unified routing
+ */
 
-<head>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<style>
-    .about-us-container {
-        margin: 40px 0;
-        padding: 20px 45px;
-        text-align: center;
+// Load configuration
+require_once __DIR__ . '/config/config.php';
+
+// Get current section and page
+$section = getCurrentSection();
+$page = getCurrentPage();
+
+// Determine which page file to load
+$pageFile = null;
+
+if ($section === 'home') {
+    if ($page === 'contact') {
+        $pageFile = PAGES_PATH . '/contact.php';
+    } else {
+        $pageFile = PAGES_PATH . '/home.php';
     }
-
-    .about-us-body {
-        font-size: 16px;
-        line-height: 1.6;
-        color: #333;
+} elseif ($section === 'exports' || $section === 'defense') {
+    // Check if page exists in section directory
+    $sectionPageFile = PAGES_PATH . '/' . $section . '/' . $page . '.php';
+    
+    if (file_exists($sectionPageFile)) {
+        $pageFile = $sectionPageFile;
+    } elseif ($page === 'contact') {
+        // Unified contact page
+        $pageFile = PAGES_PATH . '/contact.php';
+    } else {
+        // Default to section index
+        $pageFile = PAGES_PATH . '/' . $section . '/index.php';
     }
+} else {
+    // Invalid section, redirect to home
+    header('Location: index.php');
+    exit;
+}
 
-    .card-title{
-        text-align: center;
-        margin: 20px 0;
-    }
-</style>
+// Verify page file exists
+if (!file_exists($pageFile)) {
+    // 404 - page not found, redirect to home
+    header('Location: index.php');
+    exit;
+}
 
-<body>
-    <div class="card-container">
-        <div>
-            <h2 class="card-title">What we do</h2>
-        </div>
-        <div class="card-section">
-            <div class="section section-1">
-                <img class="section-img" src="img/export_img.jpg" alt="">
-                <div class="section-body text-center ">
-                    <h3 class="section-title">We Export Agricultural Products <span style="display: block;">Globally</span></h3>
-                    <button class="section-btn export-btn"><a href="exports/index.php">Explore</a></button>
-                </div>
-            </div>
-            <div class="section section-2">
-                <img class="section-img" src="img/military_image.webp" alt="">
-                <div class="section-body text-center ">
-                    <h3 class="section-title">We Provide Military Supplies For Bangladesh</h3>
-                    <button class="section-btn defense-btn"><a href="defense/index.php">Explore</a></button>
-                </div>
-            </div>
-        </div>
-    </div>
+// Include header
+include_once INCLUDES_PATH . '/header.php';
 
-    <!-- About Us Section -->
-    <div class="about-us-container">
-        <div>
-            <h2>About Us</h2>
-        </div>
-        <div class="about-us-body">
-            <p>
-                <strong>
-                    Tejarat International (TI)
-                </strong>
-                has been a trusted supplier of military products for over 15 years. We started with all military supplies, including food rations, but later realized the potential for food exports. Recognizing this, we began exporting food products beyond Bangladesh, including potatoes, betel nuts, cauliflower, cabbage, carrots, beans, mangoes, pineapples, bananas, guavas, and marine products. In recent years, we've prioritized top-tier storage facilities, fast delivery, halal assurance, and the highest quality standards to ensure customer satisfaction.
-            </p>
-        </div>
-    </div>
+// Include the requested page content
+include $pageFile;
 
-</body>
-
-<?php include_once 'inc/footer.php' ?>
+// Include footer
+include_once INCLUDES_PATH . '/footer.php';
