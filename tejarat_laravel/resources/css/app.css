@@ -1,0 +1,67 @@
+@import 'tailwindcss';
+
+/* Base custom styles */
+@layer base {
+    body {
+        @apply antialiased;
+        font-feature-settings: 'cv11', 'ss01';
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-display;
+    }
+}
+
+/* Component styles */
+@layer components {
+    .glass-card {
+        @apply relative overflow-hidden rounded-3xl;
+        @apply bg-white/10 backdrop-blur-xl;
+        @apply border border-white/20;
+        @apply shadow-2xl shadow-black/10;
+    }
+
+    .btn-primary {
+        @apply px-8 py-4 rounded-full;
+        @apply bg-gradient-to-r from-blue-600 to-blue-500;
+        @apply text-white font-semibold;
+        @apply shadow-2xl shadow-blue-500/50;
+        @apply hover:shadow-blue-500/75;
+        @apply transition-all duration-300;
+    }
+
+    .gradient-text {
+        @apply bg-gradient-to-r from-blue-600 via-purple-600 to-blue-500;
+        @apply bg-clip-text text-transparent;
+    }
+}
+
+/* Custom animations */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+@keyframes slideUp {
+    0% {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
